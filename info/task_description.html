@@ -1,0 +1,53 @@
+<!-- Describe task in general -->
+
+<p>
+    Every true traveler must know how to do 3 things: fix the fire, find the water and extract useful information from the nature around him. Programming doesn't help you with the fire and water, but with the extraction of information will cope completely.
+</p>
+
+<p>
+    Your task is to find out the sun angle above the horizon when you know the time of the day. Input data: the sun rises in the East at 6:00, what corresponds to angle of 0 degrees. At 12:00 the sun is in the zenith, what means that the angle = 90 degrees. 18:00 is the sunset time so the angle = 180 degrees. If the input will be the time of the night (before 6:00 or after 18:00), your function should return - "I don't see the sun!".
+</p>
+
+
+<!--<p style="text-align: center;">
+    <img  title="Sun angle" src="{{MEDIA}}drawing.png" alt="example">
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> The time of the day.
+</p>
+
+<p>
+    <strong>Output: </strong> Sun angle, rounded up to 2 decimals after ".".
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">sunAngle("07:00") == 15
+sunAngle("12:15"] == 93.75
+sunAngle("01:23") == "I don't see the sun!"</pre>
+{% else %}
+<pre class="brush: python">sun_angle("07:00") == 15
+sun_angle("12:15"] == 93.75
+sun_angle("01:23") == "I don't see the sun!"</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    One day it can save your life if you are lost away from civilization.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    00:00 <= time <= 23:59
+</p>
