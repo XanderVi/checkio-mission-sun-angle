@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg5161"
-   viewBox="0, 0, 128, 128"
-   height="128"
-   width="128"
-   y="0px"
+   version="1.1"
    x="0px"
-   version="1.1">
+   y="0px"
+   width="128"
+   height="128"
+   viewBox="0, 0, 128, 128"
+   id="svg5161">
   <metadata
      id="metadata5165">
     <rdf:RDF>
@@ -27,30 +27,101 @@
   <g
      id="Background">
     <rect
-       id="rect5144"
-       fill-opacity="0"
-       fill="#000000"
-       height="128"
-       width="128"
+       x="0"
        y="0"
-       x="0" />
+       width="128"
+       height="128"
+       fill="#000000"
+       fill-opacity="0"
+       id="rect5144" />
   </g>
   <g
      id="g5157">
     <path
-       id="path5147"
+       d="M18.092,6 L109.903,6 C116.552,6 122,11.441 122,18.096 L122,109.902 C122,116.559 116.552,122 109.903,122 L18.092,122 C11.436,122 6,116.559 6,109.902 L6,18.096 C6,11.441 11.436,6 18.092,6"
        fill="#737370"
-       d="M18.092,6 L109.903,6 C116.552,6 122,11.441 122,18.096 L122,109.902 C122,116.559 116.552,122 109.903,122 L18.092,122 C11.436,122 6,116.559 6,109.902 L6,18.096 C6,11.441 11.436,6 18.092,6" />
-    <text
-       id="text5169"
-       y="93.723846"
-       x="6.4267778"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;fill:#82d1f5;fill-opacity:1;stroke:none;"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:80px;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';fill:#82d1f5;fill-opacity:1;"
-         y="93.723846"
-         x="6.4267778"
-         id="tspan5167">W$</tspan></text>
+       id="path5147" />
+    <g
+       transform="matrix(2.42,0,0,2.42,9.4456612,9.4456615)"
+       id="g337-3"
+       style="fill:#82d1f5;fill-opacity:1">
+      <g
+         id="g335-6"
+         style="fill:#82d1f5;fill-opacity:1">
+        <path
+           d="m 22.58,11.269 c -6.237,0 -11.311,5.075 -11.311,11.312 0,6.237 5.074,11.312 11.311,11.312 6.236,0 11.311,-5.074 11.311,-11.312 0,-6.238 -5.075,-11.312 -11.311,-11.312 z"
+           id="path299-7"
+           style="fill:#82d1f5;fill-opacity:1" />
+        <g
+           id="g333-5"
+           style="fill:#82d1f5;fill-opacity:1">
+          <g
+             id="g303-3"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 22.58,7.944 c -1.219,0 -2.207,-0.988 -2.207,-2.206 V 2.207 C 20.373,0.988 21.361,0 22.58,0 c 1.219,0 2.207,0.988 2.207,2.207 v 3.531 c 0,1.218 -0.989,2.206 -2.207,2.206 z"
+               id="path301-5"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+          <g
+             id="g307-6"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 22.58,37.215 c -1.219,0 -2.207,0.988 -2.207,2.207 v 3.53 c 0,1.22 0.988,2.208 2.207,2.208 1.219,0 2.207,-0.988 2.207,-2.208 v -3.53 c 0,-1.219 -0.989,-2.207 -2.207,-2.207 z"
+               id="path305-2"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+          <g
+             id="g311-9"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 32.928,12.231 c -0.861,-0.862 -0.861,-2.259 0,-3.121 l 2.497,-2.497 c 0.861,-0.861 2.259,-0.861 3.121,0 0.862,0.862 0.862,2.26 0,3.121 l -2.497,2.497 c -0.861,0.862 -2.258,0.862 -3.121,0 z"
+               id="path309-1"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+          <g
+             id="g315-2"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 12.231,32.93 c -0.862,-0.863 -2.259,-0.863 -3.121,0 l -2.497,2.496 c -0.861,0.861 -0.862,2.26 0,3.121 0.862,0.861 2.26,0.861 3.121,0 l 2.497,-2.498 c 0.862,-0.861 0.862,-2.259 0,-3.119 z"
+               id="path313-7"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+          <g
+             id="g319-0"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 37.215,22.58 c 0,-1.219 0.988,-2.207 2.207,-2.207 h 3.531 c 1.219,0 2.207,0.988 2.207,2.207 0,1.219 -0.988,2.206 -2.207,2.206 h -3.531 c -1.219,0 -2.207,-0.987 -2.207,-2.206 z"
+               id="path317-9"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+          <g
+             id="g323-3"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 7.944,22.58 c 0,-1.219 -0.988,-2.207 -2.207,-2.207 H 2.207 C 0.988,20.373 0,21.361 0,22.58 c 0,1.219 0.988,2.206 2.207,2.206 h 3.531 c 1.218,0 2.206,-0.987 2.206,-2.206 z"
+               id="path321-6"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+          <g
+             id="g327-0"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 32.928,32.93 c 0.862,-0.861 2.26,-0.861 3.121,0 l 2.497,2.497 c 0.862,0.86 0.862,2.259 0,3.12 -0.862,0.861 -2.259,0.861 -3.121,0 L 32.928,36.05 c -0.862,-0.862 -0.862,-2.259 0,-3.12 z"
+               id="path325-6"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+          <g
+             id="g331-2"
+             style="fill:#82d1f5;fill-opacity:1">
+            <path
+               d="m 12.231,12.231 c 0.862,-0.862 0.862,-2.259 0,-3.121 L 9.734,6.614 c -0.862,-0.862 -2.259,-0.862 -3.121,0 -0.862,0.861 -0.862,2.259 0,3.12 l 2.497,2.497 c 0.862,0.863 2.259,0.863 3.121,0 z"
+               id="path329-6"
+               style="fill:#82d1f5;fill-opacity:1" />
+          </g>
+        </g>
+      </g>
+    </g>
   </g>
   <defs
      id="defs5159" />
