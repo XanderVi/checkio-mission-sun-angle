@@ -31,6 +31,14 @@ TESTS = {
 	{
             "input": "18:01",
             "answer": "I don't see the sun!"
+        },
+	{
+            "input": "18:00",
+            "answer": 180
+        },
+	{
+            "input": "06:00",
+            "answer": 0
         }
     ]
 }
