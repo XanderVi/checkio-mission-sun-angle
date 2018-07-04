@@ -1,0 +1,53 @@
+<!-- Describe task in general -->
+
+<p>
+    真の旅人は皆、３つの術を知っていなければならない。すなわち、火を起こすこと、水を見つけること、そして、周辺の自然環境から有益な情報を得ることである。プログラムは、火をつけたり、水をみつける助けにはなりそうにない。しかし、自然環境からの情報抽出に関しては、プログラミングがまさに打って付けなのである。
+</p>
+
+<p>
+    あなたの任務は、与えられた時刻から、地平線からの太陽の角度を見つけ出す事です。太陽は、朝の6:00に東の地平線から昇りますが、この時の角度を0度とします。そして、太陽はお昼の12:00に天頂に到達します。この時の角度は90度となります。やがて、太陽は夕方の18:00に西の空へ沈みます。この時の角度は180度となります。もし太陽が見えない夜の時刻が与えられた場合（朝の6:00より前や夕方の18:00より後）、あなたの関数は "I don't see the sun!"（太陽は見えないよ！）という文字列を返すようにして下さい。
+</p>
+
+
+<p style="text-align: center;">
+    <img  title="Sun angle" src="{{MEDIA}}sun.png" alt="example" style="max-height: 400px">
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> 時刻
+</p>
+
+<p>
+    <strong>Output: </strong> 太陽の角度, 小数点第２位までに丸める.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">sunAngle("07:00") == 15
+sunAngle("12:15"] == 93.75
+sunAngle("01:23") == "I don't see the sun!"</pre>
+{% else %}
+<pre class="brush: python">sun_angle("07:00") == 15
+sun_angle("12:15"] == 93.75
+sun_angle("01:23") == "I don't see the sun!"</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    いつか、文明から遠く離れた場所で迷子になった時、あなたの命を救います。
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    00:00 <= time <= 23:59
+</p>
