@@ -1,0 +1,130 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        Я не знаю, як розпочати вирішення цієї місії
+    </div>
+    <div class="answer">
+        Ідея в тому, щоб знайти відповідність між одною годиною та одним градусом, між одною хвилиною та одним градусом.
+        Після цього просто розрахуй кут нахилу, враховуючи що 18:00 - це 180 градусів, а 6:00 - це 0 градусів.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Мені потрібна допомога, щоб продовжити місію
+    </div>
+    <div class="answer">
+        Тобі буде корисно прочитати трохи інформації про:
+        <a href='https://docs.python.org/3.10/library/stdtypes.html'>str.split()</a>
+        (<a href='https://www.w3schools.com/python/ref_string_split.asp'>приклад</a> ),
+        <a href='https://docs.python.org/3.10/library/functions.html?#map'>map()</a>
+        (<a href='https://www.w3schools.com/python/ref_func_map.asp'>приклад</a> ), та
+        <a href='https://docs.python.org/3.10/library/functions.html?#int'>int()</a>
+        (<a href='https://www.w3schools.com/python/ref_func_int.asp'>приклад</a> ).
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Потрібна допомога!
+    </div>
+    <div class="answer">
+        Давай розпочнемо з підготовки нашого вхідного рядка перед розрахунком. Ми передамо до змінних "h" та "m" значення
+        годин і хвилин відповідно, вже конвертовані у цілочисельний тип даних за допомогою функцій map() та int().
+        Форма запису через кому "h, m =  map(int, ...)" еквівалентна до наступної форми "h = int(...)" та "m = int(...)".
+        Ми використовуємо функцію int() до кожного елементу списку розділеного рядка використовуючи сепаратор ":".
+        <pre class="brush: python">
+time = "07:00"
+h, m = map(int, time.split(':'))
+print(h)
+print(m)
+
+# Output:
+# 7
+# 0
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Я вже не знаю що робити. Мені потрібна маленька підказка.
+    </div>
+    <div class="answer">
+        Перейдемо до формули розрахунку. Години і хвилини співвідносяться до градусів наступним чином: 6 годин = 90 градусів,
+        отже 90/6 = 15, 1 година - це 15 градусів; 6 годин = 360 хвилин = 90 градусів, отже 90/360 = 0.25, 1 хвилина - це 0.25 градуса.
+        Враховуючи, що 6:00 це має бути 0 градусів, то при розрахунку нам потрібно це врахувати віднявши 90 від результату.
+        Формула буде наступною.
+        <pre class="brush: python">
+time = "07:00"
+h, m = map(int, time.split(':'))
+angle = 15 * h + m * 0.25 - 90
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Нічого не працює. SOS
+    </div>
+    <div class="answer">
+        Тобі залишилось написати умову if за допомогою якої ти будеш повертати або результат, якщо сонце видно, або
+        фразу "I don't see the sun!", якщо сонця не видно. Використаємо для цього тренарний оператор.
+        <pre class="brush: python">
+time = "07:00"
+h, m = map(int, time.split(':'))
+angle = 15 * h + m * 0.25 - 90
+print(angle) if 0 <= angle <= 180 else print("I don't see the sun!")
+
+# Output:
+# 15.0
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Не хочу здаватись, допоможи!
+    </div>
+    <div class="answer">
+        Тобі залишилось тільки обгорнути свій код у функцію, та до виразу return вписати нашу умову if.
+        <pre class="brush: python">
+def sun_angle(time: str) -> Union[float, str]:
+    h, m = map(int, time.split(':'))
+    angle = 15 * h + m * 0.25 - 90
+    return angle if 0 <= angle <= 180 else "I don't see the sun!"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Я хочу бути кращим з кращих ПРОГРАМІСТІВ!!! ПОКАЖИ МЕНІ БІЛЬШЕ РІШЕНЬ!!1!!!11!
+    </div>
+    <div class="answer">
+        Добре, добре! Оце настрій!=)
+        Формула така сама як в нашому рішенні, але замість розділення рядка на складові списку, тут просто використовують
+        зрізи.
+        <pre class="brush: python">
+def sun_angle(time):
+    t = int(time[:2]) * 15 + int(time[3:]) / 4 - 90
+    return t if 0 <= t <= 180 else "I don't see the sun!"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Я хочу більше!
+    </div>
+    <div class="answer">
+        Подивись на цей розв'язок. За допомогою модуля datetime ми можемо виконати наш розрахунок в одиницях виміру часу,
+        а вже потім перевести значення в одиниці виміру кута.
+        <pre class="brush: python">
+import datetime
+def sun_angle(time):
+    #replace this for solution
+    start=datetime.datetime.strptime("06:00","%H:%M")
+    end=datetime.datetime.strptime("18:00","%H:%M")
+    time=datetime.datetime.strptime(time,"%H:%M")
+    diff=(time-start).seconds/60*0.25
+    return diff if start<=time<=end else "I don't see the sun!"
+        </pre>
+    </div>
+</div>
+
+
+</body>
