@@ -11,37 +11,37 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": '07:00',
+            "input": ['07:00'],
             "answer": 15
         },
         {
-            "input": '12:15',
+            "input": ['12:15'],
             "answer": 93.75
         }
     ],
     "Extra": [
         {
-            "input": '12:30',
+            "input": ['12:30'],
             "answer": 97.5
         },
         {
-            "input": '05:55',
+            "input": ['05:55'],
             "answer": "I don't see the sun!"
         },
 	{
-            "input": "18:01",
+            "input": ["18:01"],
             "answer": "I don't see the sun!"
         },
 	{
-            "input": "23:59",
+            "input": ["23:59"],
             "answer": "I don't see the sun!"
         },
 	{
-            "input": "18:00",
+            "input": ["18:00"],
             "answer": 180
         },
 	{
-            "input": "06:00",
+            "input": ["06:00"],
             "answer": 0
         }
     ]

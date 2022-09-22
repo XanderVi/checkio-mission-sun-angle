@@ -28,15 +28,7 @@
 <p>
 <strong>Example:</strong>
 </p>
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sunAngle("07:00") == 15
-sunAngle("12:15") == 93.75
-sunAngle("01:23") == "I don't see the sun!"</pre>
-{% else %}
-<pre class="brush: python">sun_angle("07:00") == 15
-sun_angle("12:15") == 93.75
-sun_angle("01:23") == "I don't see the sun!"</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <!-- Here you can explain how it can be used in development and what is usage of this. -->

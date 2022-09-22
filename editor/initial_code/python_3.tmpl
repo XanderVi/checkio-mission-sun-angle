@@ -1,0 +1,23 @@
+{% comment %}New initial code template{% endcomment %}
+{% block env %}from typing import Union{% endblock env %}
+
+{% block start %}
+def sun_angle(time: str) -> Union[float, str]:
+    # replace this for solution
+    return time
+{% endblock start %}
+
+{% block example %}
+print('Example:')
+print(sun_angle("07:00"))
+{% endblock %}
+
+{% block tests %}
+{% for t in tests %}
+assert {% block call %}sun_angle({{t.input|p_args}})
+{% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
+{% endblock %}
+
+{% block final %}
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+{% endblock final %}

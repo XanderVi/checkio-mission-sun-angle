@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+
+<p>
+    Кожен справжній мандрівник повинен знати, як зробити 3 речі: розпалити вогонь, знайти воду та отримати корисну
+    інформацію з природи навколо нього. Програмування не допоможе вам розпалити вогонь або знайти воду, але якщо мова йде про отримання
+    інформації - це може бути те, що вам потрібно.
+</p>
+
+<p>
+    Твоє завдання - знайти кут сонця над горизонтом, знаючи час доби. Вхідні дані: сонце сходить на Сході о 6:00 ранку,
+    що відповідає куту 0 градусів. О 12:00 дня сонце сягає його зеніту, а це означає, що кут дорівнює 90 градусів.
+    18:00 - час заходу сонця, тому кут становить 180 градусів. Якщо на вхід буде передано час ночі (до 6:00 ранку або після 18:00),
+    твоя функція повинна повертати - "I don't see the sun!".
+</p>
+
+
+<p style="text-align: center;">
+    <img  title="Sun angle" src="{{MEDIA}}sun.png" alt="example" style="max-height: 400px">
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Вхідні дані: </strong> Час доби як рядок.
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> Кут сонця, округлений до 2 знаків після коми.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Приклади:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Як це використовується: </strong>
+    Одного разу це може врятувати твоє життя, якщо ти загубишся далеко від цивілізації.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Передумова: </strong><br>
+    00:00 <= time <= 23:59
+</p>
